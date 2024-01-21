@@ -19,7 +19,7 @@ body {
 }
 
 #logo {
-    max-height: 70px;
+    max-height: 80px;
     margin-right: 20px;
 }
 
@@ -56,30 +56,44 @@ body {
 
 .project-section {
     margin-top: 30px;
-    margin-bottom: 50px; /* Increased margin between project sections */
+    margin-bottom: 50px;
 }
 
 .project {
-    margin-bottom: 30px; /* Increased margin between projects */
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.project-icons {
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.project-icons img {
+    max-height: 50px;
+    border-radius: 2px;
+}
+
+.project-info {
+    flex: 1;
 }
 
 .project h3 {
     text-transform: kebab-case;
-    margin-bottom: 10px;
+    margin: 0;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .project p {
-    margin-bottom: 10px;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .project a.link {
     color: #ec7210;
     text-decoration: none;
-}
-
-.project a.link:hover {
-    text-decoration: underline;
 }
 
 .project-buttons {
@@ -88,7 +102,6 @@ body {
 }
 
 .btn {
-    display: inline-block;
     padding: 10px;
     color: #ec7210;
     text-decoration: none;
