@@ -26,6 +26,7 @@ body {
 #brand {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 #brand h1 {
@@ -46,6 +47,19 @@ body {
     font-size: 18px;
     display: flex;
     align-items: center;
+}
+
+.nav-item:hover {
+    filter: brightness(75%)
+}
+
+.link-highlight {
+    color: #ec7210;
+    text-decoration: none;
+}
+
+.link-highlight:hover {
+    filter: brightness(75%);
 }
 
 .project-separator {
@@ -112,18 +126,38 @@ body {
     transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
-.btn:hover {
+.btn-solid {
+    background-color: #b86825;
+    /* border: 1px solid #ec7210; */
+    color: #1e1e1e;
+}
+
+.btn-solid:hover {
+    background-color: #1e1e1e;
+    color: #ec7210;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hollow {
+    border: 1px solid #ec7210;
+    color: #ec7210;
+}
+
+.btn-hollow:hover {
     background-color: #ec7210;
     color: #1e1e1e;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.btn-orange {
-    background-color: #ec7210;
-    color: #1e1e1e;
+.page-footer {
+    text-align: center;
 }
 
-.btn-pypi {
-    border: 1px solid #ec7210;
-    color: #ec7210;
+.project-code {
+    display: none;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
